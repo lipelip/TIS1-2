@@ -1,0 +1,293 @@
+body {
+	font-family: "Gibson", "Helvetica Neue", helvetica, sans-serif;
+	font-size: 16px;
+	color: #8c98a8;
+	line-height: 1.5;
+	border-top: 5px #4DB2E7 solid;
+}
+a {
+	text-decoration: none;
+	color: #293439;
+}
+a:hover {
+	color: #8c98a8;
+	/* mauvaise idée on enlève de l'information */
+}
+
+
+/* `Reset
+-------------------------------------------------------------*/
+
+body {
+	margin: 0;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+/* `Classes
+-------------------------------------------------------------*/
+
+.section__title {
+	font-size: 34px;
+	color: #293439;
+	margin-bottom: 15px;
+	font-weight: 100;
+}
+.section__title--small {
+	font-size: 30px;
+}
+.section__title--color2 { color: #8175fe; }
+.section__title--color3 { color: #4db2e7; }
+.section__title--color4 { color: #fff; }
+.section__title--logo {
+	font-size: 80px;
+	color: rgb(77, 178, 231);
+	font-weight: bold;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+}
+
+.btn__sign {
+	font-size: 18px;
+	font-weight: 100;
+	color: #293439;
+	border-bottom: 1px solid #d5d9df;
+}
+.btn__sign:hover {
+	color: #4db2e7;
+	border-color: transparent;
+}
+.btn__sign2 {
+	font-size: 24px;
+	font-weight: 100;
+	color: #8175fe;
+	border-bottom: 1px solid #dddaff;
+}
+.btn__sign2:hover {
+	color: #293439;
+	border-color: transparent;
+}
+.btn__cta {
+	font-size: 36px;
+	font-weight: 100;
+	color: #fff;
+	background-color: #8175fe;
+	border-radius: 50px;
+	padding: 32px 56px;
+}
+.btn__cta:hover {
+	background-color: #4db2e7;
+	color: #fff;
+}
+.btn__appstore {
+	padding: 17px 17px 17px 51px;
+	color: #fff;
+	font-size: 14px;
+	border-radius: 6px;
+	background: url(../_images/icone-iphone.svg) #8175fe no-repeat 17px center;
+	
+	display: inline-block;
+}
+.btn__appstore--strong {
+	font-size: 24px;
+	font-weight: normal;
+	display: block;
+}
+.btn__appstore:hover {
+	background-color: #4db2e7;
+	color: #fff;
+}
+.btn__sign--footer {
+	color: #4db2e7;
+	border-bottom: 1px solid #bde3f6;
+}
+.btn__sign--footer:hover {
+	color: #8c98a8;
+	border-color: transparent;
+}
+.section--header {
+	background: url(../_images/bg-foret.jpg) no-repeat center bottom;
+}
+.section--features {
+	background: url(../_images/logo-roon-small.png) no-repeat center;
+}
+.section--gradient {
+	background-color: #2b3749;
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #253444), color-stop(100%, #3c415b));
+	background: -webkit-linear-gradient(#253444, #3c415b);
+	background: -moz-linear-gradient(#253444, #3c415b);
+	background: -o-linear-gradient(#253444, #3c415b);
+	background: linear-gradient(#253444,#3c415b);
+}
+.section--profile {
+	background-color: #e7eaef;
+}
+.section--ios {
+	color: #fff;
+	
+}
+
+/* Layout 
+	
+on corrige l'html pour rajouter une classe container	
+principe du margin 0 auto;
+principe de la classe container
+
+position absolute avec le bouton
+FLUX en dehors du flux
+
+partir aussi des autres exmple pour le positionnement
+
+expliquer le overflow hidden pour cacher les objets
+après avec le float
+
+ensuite les float
+montrer aussi le clear (pas besoin ici) et le overflow
+	
+*/
+
+
+
+
+.container {
+	width: 880px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.btn__sign--header {
+	position: absolute;
+	top: 40px;
+	right: 50px;
+}
+
+.section {
+	overflow: hidden;
+}
+
+
+.section__title {
+	margin-top: 0;
+}
+.section__title--logo {
+	margin-bottom: 30px;
+}
+.section__element {
+	width: 330px;
+	margin: 130px 0;
+}
+/*container--small*/
+.col-big {
+	width: 510px;
+}
+
+
+
+.section--advantage {
+	position: relative;
+	height: 777px;
+}
+.section__image--left {
+	position: absolute;
+	left: -690px;
+	top: 63px;
+}
+.section__image--right {
+	position: absolute;
+	right: -285px;
+	top: 63px;
+}
+
+
+.btn__cta{
+	display: inline-block;
+}
+
+.center {
+	margin: 0 auto;
+}
+
+
+
+.section-profile {
+	height: 360px;
+}
+.section__image--scroll {
+	position: absolute;
+	top: -80px;
+	right: -120px;	
+}
+
+
+.section--focus {
+	padding: 160px 0 220px;
+}
+.text-center {
+	text-align: center;
+}
+
+
+.section--ios {
+	overflow: inherit;
+	height: 435px;
+	margin-bottom: 160px;
+}
+
+
+.section__element--2col {
+	float: left;
+}
+.section__element--2col:nth-child(even) {
+	float: right;
+}
+.fleft {
+	float: left;
+}
+.fright {
+	float: right;
+}
+
+.section__image--popup {
+	position: absolute;
+	top: -85px;
+	left: 115px;
+}
+.section--footer {
+	padding: 70px 0;
+}
+
+.btn__sign--footer {
+	margin-left: 40px;
+}
+.banner__logo {
+	margin-right: 50px;
+}
+
+.contact__element {
+	float: left;
+	margin: 20px 40px 0 0;
+}
+
+
+
+
+.section__title--logo {
+	margin-bottom: 0;
+}
+.btn__cta {
+	margin: 170px 0 30px 0;
+}
+.section--header {
+	padding: 95px 0 113px;
+}
+.nomargin {
+	margin: 0;
+}
+
+
+
+

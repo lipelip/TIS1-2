@@ -1,0 +1,213 @@
+/* 
+
+selecteur { propriété: valeur; }
+
+Mettre en gras
+font-weight: normal | bold;
+
+Taille font
+font-size: 32px;
+
+Espace entre les éléments
+margin-top: 10px;
+margin-right: 10px;
+margin-bottom: 10px;
+margin-left: 10px;
+
+margin: 10px 10px 10px 10px; haut | droit | bas | gauche
+margin: 10px 10px 10px;	H | D/G | B
+margin: 10px 10px; H/B | D/G
+margin: 10px; partout
+
+Toutes les balises = 2 display possible
+
+- block
+- inline
+
+text-decoration: none | underline | overline | line-through;
+
+*/
+
+body {
+	font-family: sans-serif;
+	font-size: 16px; /* par defaut 16px */
+	color: #8C98A8;
+	line-height: 1.5; /* 1.5 x 16 = 32px */	
+/*
+	border-color: #4DB2E7;
+	border-width: 5px;
+	border-style: solid;
+*/
+	border-top: 5px #4DB2E7 solid;
+	margin: 0;
+}
+/*
+h1 {
+	font-size: 34px;
+	font-weight: normal;
+}
+h2 {
+	font-weight: normal;
+}
+*/
+a {
+	color: #293439;
+	text-decoration: none;
+}
+a:hover {
+	color: #8C98A8;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+/*
+
+Héritage & spécificité
+
+*/
+
+header a {}
+
+/*
+
+Les ID ou les classes
+#kedis {}
+
+
+
+*/
+.gros_bouton_rouge {
+	color: blue;
+}
+/*
+
+BEMcss et SMACSS
+
+Block
+Element  __element
+Modifier --modifie
+
+
+*/
+
+/* classes */
+
+.section__title {
+	font-size: 34px;
+	color: #293439;
+	font-weight: normal;
+}
+.section__title--color1 {
+	color: #fff;
+}
+.section__title--color2 {
+	color: #8175FE;
+}
+.section__title--color3 {
+	color: #4DB2E7;
+}
+.section__title--logo {
+	font-size: 80px;
+	color: #4DB2E7;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+
+.section--header {
+	/*
+	background-image: url(../_images/bg-foret.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	*/
+	background: url(../_images/bg-foret.jpg) no-repeat center bottom;
+}
+.section--advantage {}
+.section--features {
+	background: url(../_images/logo-roon-small.png) no-repeat center;
+}
+.section--profiles {
+	background-color: #E7EAEF;
+}
+.section--focus {}
+.section--ios {}
+.section--footer {}
+.section--gradient {
+	background: #253444; /* Old browsers */
+	background: -moz-linear-gradient(top,  #253444 0%, #3c415b 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#253444), color-stop(100%,#3c415b)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #253444 0%,#3c415b 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #253444 0%,#3c415b 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #253444 0%,#3c415b 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #253444 0%,#3c415b 100%); /* W3C */
+}
+
+.btn {
+	font-size: 18px;
+	font-weight: 100;
+	color: #293439;
+	border-bottom: 1px solid #d5d9df;
+}
+.btn:hover {
+	color: #4db2e7;
+	border-color: transparent;
+}
+.btn2 {
+	font-size: 24px;
+	color: #8175fe;
+	border-bottom: 1px solid #dddaff;
+}
+.btn2:hover {
+	color: #293439;
+	border-color: transparent;
+}
+.btn--header {
+	/* le mettre en haut à droite */
+}
+.btn--cta {
+	font-size: 36px;
+	font-weight: 100;
+	color: #fff;
+	background-color: #8175fe;
+	border-radius: 50px;
+	padding: 32px 56px;
+}
+.btn--cta:hover {
+	background-color: #4db2e7;
+	color: #fff;
+}
+.btn--appstore {
+	padding: 17px;
+	color: #fff;
+	font-size: 14px;
+	border-radius: 6px;
+	background: url(../_images/icone-iphone.svg) #8175fe no-repeat left center;
+}
+.btn--appstore:hover {
+	background-color: #4db2e7;
+	color: #fff;
+}
+.btn--appstore--strong {
+	font-size: 24px;
+	font-weight: normal;
+	display: block;
+}
+.btn--footer {
+	color: #4db2e7;
+	border-bottom: 1px solid #bde3f6;
+}
+.btn--footer:hover {
+	color: #8c98a8;
+	border-color: transparent;
+}
+
+
+
+/* layout */ 
+
+
+
+
