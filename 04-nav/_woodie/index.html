@@ -10,46 +10,16 @@
 	</head>
 	<body>
 		
-
-		
-
 		<nav>
 			<ul class="nav cf">
 				<li class="nav__element"><a href="#">Home <span>The start</span></a></li>
-				<li class="nav__element"><a href="#">About <span>The start</span></a></li>
+				<li class="nav__element nav__element--active"><a href="#">About <span>The start</span></a></li>
 				<li class="nav__element"><a href="#">Services <span>The start</span></a></li>
 				<li class="nav__element"><a href="#">Portfolio <span>The start</span></a></li>
 				<li class="nav__element"><a href="#">Contact <span>The start</span></a></li>
 				<li class="nav__element"><a href="#">Blog <span>The start</span></a></li>
 			</ul>
 		</nav>
-
-
-		<script>
-
-			//Vanilla javascript
-			var menu = document.getElementsByClassName("nav__element");
-
-
-			for(var i=0; i<menu.length; i++){
-		
-
-				menu[i].addEventListener("click", function(){
-
-					var menuActive = document.getElementsByClassName("nav__element--active");
-					if(menuActive[0]){
-						menuActive[0].classList.remove("nav__element--active");
-					}
-
-					this.classList.add("nav__element--active");
-
-				});
-			}
-
-			//jQuery
-
-
-		</script>
 
 	</body>
 </html>
