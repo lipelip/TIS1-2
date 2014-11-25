@@ -1,79 +1,14 @@
 @import url(normalize.css);	/* v3.0.2 */
 @import url(cf.css);
+
+/*
+If you're using @font-face
+@import url(fonts.css);
+*/
+
 nav ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
 }
-/* mon style */
-.nav__element {
-	float: left;
-}
-.nav__element > a {
-	display: block;
-	height: 58px;
-	background: url(../_images/globale.jpg) no-repeat;
-	text-indent: -9999px;
-	width: 120px;
-}
-.nav__element:nth-child(2) > a {
-	width: 146px;
-	background-position: -120px top;
-}
-.nav__element:nth-child(3) > a {
-	width: 158px;
-	background-position: -266px top;
-}
-.nav__element:nth-child(4) > a {
-	width: 182px;
-	background-position: -424px top;
-}
-.nav__element:nth-child(5) > a {
-	width: 179px;
-	background-position: -606px top;
-}
-.nav__element:nth-child(6) > a {
-	width: 175px;
-	background-position: -785px top;
-}
-
-.nav__element > a:hover {
-	background-position: left center;
-}
-.nav__element:nth-child(2) > a:hover {
-	background-position: -120px center;
-}
-.nav__element:nth-child(3) > a:hover {
-	background-position: -266px center;
-}
-.nav__element:nth-child(4) > a:hover {
-	background-position: -424px center;
-}
-.nav__element:nth-child(5) > a:hover {
-	background-position: -606px center;
-}
-.nav__element:nth-child(6) > a:hover {
-	background-position: -785px center;
-}
-
-
-.nav__element.nav__element--active > a {
-	background-position: left bottom;
-}
-.nav__element.nav__element--active:nth-child(2) > a {
-	background-position: -120px bottom;
-}
-.nav__element.nav__element--active:nth-child(3) > a {
-	background-position: -266px bottom;
-}
-.nav__element.nav__element--active:nth-child(4) > a {
-	background-position: -424px bottom;
-}
-.nav__element.nav__element--active:nth-child(5) > a {
-	background-position: -606px bottom;
-}
-.nav__element.nav__element--active:nth-child(6) > a {
-	background-position: -785px bottom;
-}
-
-
+/* Your Style */
